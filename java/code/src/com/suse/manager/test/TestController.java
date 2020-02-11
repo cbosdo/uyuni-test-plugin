@@ -42,7 +42,6 @@ public class TestController implements WebExtensionPoint{
                 withUserPreferences(withCsrfToken(withUser(TestController::show))), jade);
 	}
 
-
 	@Override
 	public Reader getTemplate(String name, String encoding) throws IOException {
 		InputStream stream = TestController.class.getClassLoader().getResourceAsStream(TEMPLATE_ROOT + name);

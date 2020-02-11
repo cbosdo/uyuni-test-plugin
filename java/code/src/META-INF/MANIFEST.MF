@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Plugin-Class: com.suse.manager.test.TestPlugin
+Plugin-Version: 0.0.1
+Plugin-Id: uyuni-test-addon
+Plugin-Provider: Cedric Bosdonnat

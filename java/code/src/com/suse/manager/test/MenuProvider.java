@@ -15,12 +15,12 @@ public class MenuProvider implements MenuExtensionPoint {
 		Map<String, List<MenuItem>> items = new HashMap<>();
 
 		items.put("External Links", Arrays.asList(
-				new MenuItem("Test plugin").withPrimaryUrl("https://github.com/cbosdo/uyuni-test-plugin")));
+				new MenuItem("test.test_plugin").withPrimaryUrl("https://github.com/cbosdo/uyuni-test-plugin")));
 
 		if (authenticated) {
 			items.put("", Arrays.asList(
-					new MenuItem("Hackweek").withIcon("spacewalk-icon-virtual-guest")
-						.addChild(new MenuItem("Site").withPrimaryUrl("https://hackweek.suse.com"))));
+					new MenuItem("test.hackweek").withIcon("spacewalk-icon-virtual-guest")
+						.addChild(new MenuItem("test.site").withPrimaryUrl("https://hackweek.suse.com"))));
 		}
 
 		return items;
